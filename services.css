@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.services-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services-header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.services-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Section */
+.filter-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #667eea;
+}
+
+.search-container button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    color: #666;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.service-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.service-features li {
+    padding: 5px 0;
+    color: #666;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+.image {
+    width: 20px;
+    height: 70px;
+    border-radius: 50%;
+    
+}
+
+.service-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.service-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+
+/* Pagination Styles */
+.pagination-container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pagination-info {
+    color: #666;
+    font-size: 14px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-controls button {
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    color: #666;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.pagination-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    color: #666;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    min-width: 45px;
+    text-align: center;
+}
+
+.page-number:hover {
+    background: #f8f9fa;
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.page-number.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-color: transparent;
+}
+
+.items-per-page {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.items-per-page select {
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    color: #666;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.close:hover {
+    color: #667eea;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: blue;
+    font-size: 1.6rem;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer a :hover{
+    color:red;
+    
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .services-header h1 {
+        font-size: 2rem;
+    }
+    
+    .services-header p {
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .filter-buttons {
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    
+    .pagination-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .pagination-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .page-numbers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 20px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .search-container input,
+    .search-container button {
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    .service-price {
+        font-size: 1rem;
+    }
+    .service-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .pagination-controls button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .page-number {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .items-per-page select {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .modal-content {
+        padding: 15px;
+        width: 90%;
+    }
+    .close {
+        font-size: 24px;
+        right: 15px;
+        top: 10px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    .services-header h1 {
+        font-size: 1.8rem;
+    }
+    .services-header p {
+        font-size: 0.9rem;
+    }
+    .filter-section {
+        padding: 15px;
+    }
+    .filter-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-container {
+        max-width: 100%;
+    }
+    .search-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .search-container button {
+        width: 100%;
+    }
+    .service-icon {
+        font-size: 2.5rem;
+    }
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    .service-price {
+        font-size: 1rem;
+    }
+    .service-features li {
+        padding-left: 15px;
+    }
+    .service-features li::before {
+        left: 5px;
+    }
+    .service-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .pagination-info {
+        font-size: 12px;
+    }
+    .pagination-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pagination-controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .page-numbers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .page-number {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .items-per-page {
+        flex-direction: column;
+        align-items: center;
+    }
+    .items-per-page select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .modal {
+        padding: 0;
+    }
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+    .close {
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    .services-header {
+        padding: 20px;
+    }
+    .services-header h1 {
+        font-size: 1.5rem;
+    }
+    .services-header p {
+        font-size: 0.8rem;
+    }
+    .filter-section {
+        padding: 15px;
+    }
+    .filter-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-container {
+        max-width: 100%;
+    }
+    .search-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .search-container button {
+        width: 100%;
+    }
+    .service-icon {
+        font-size: 2.5rem;
+    }
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    .service-price {
+        font-size: 1rem;
+    }
+    .service-features li {
+        padding-left: 15px;
+    }
+    .service-features li::before {
+        left: 5px;
+    }
+
+    .service-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .pagination-info {
+        font-size: 12px;
+    }
+    .pagination-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pagination-controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .page-numbers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .page-number {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .items-per-page {
+        flex-direction: column;
+        align-items: center;
+    }
+    .items-per-page select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .modal {
+        padding: 0;
+    }
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+    .close {
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+    }
+    footer {
+        font-size: 12px;
+    }
+}

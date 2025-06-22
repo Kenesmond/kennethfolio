@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Pagination</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <div class="form">
+        <form id="contactform">
+            <h2>Contact Me</h2>
+            
+            <!-- Progress indicator -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="step-indicators">
+                    <span class="step active" data-step="1">1</span>
+                    <span class="step" data-step="2">2</span>
+                    <span class="step" data-step="3">3</span>
+                </div>
+            </div>
+
+            <!-- Page 1: Personal Information -->
+            <div class="form-page active" id="page1">
+                <h3>Personal Information</h3>
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br>
+                
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-next" onclick="nextPage()">Next</button>
+                </div>
+            </div>
+
+            <!-- Page 2: Contact Details -->
+            <div class="form-page" id="page2">
+                <h3>Contact Details</h3>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+                
+                <label for="company">Company (Optional):</label><br>
+                <input type="text" id="company" name="company" placeholder="Enter your company name"><br>
+                
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales</option>
+                    <option value="feedback">Feedback</option>
+                </select><br>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev" onclick="prevPage()">Previous</button>
+                    <button type="button" class="btn-next" onclick="nextPage()">Next</button>
+                </div>
+            </div>
+
+            <!-- Page 3: Message -->
+            <div class="form-page" id="page3">
+                <h3>Your Message</h3>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" placeholder="Enter your message here" required></textarea><br>
+                
+                <label for="priority">Priority:</label><br>
+                <select id="priority" name="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select><br>
+                
+                <label class="checkbox-container">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to our newsletter
+                    <span class="checkmark"></span>
+                </label><br>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev" onclick="prevPage()">Previous</button>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- Success message -->
+        <div id="successMessage" class="success-message" style="display: none;">
+            <h3>Thank you!</h3>
+            <p>Your message has been sent successfully. We'll get back to you soon.</p>
+            <button type="button" onclick="resetForm()">Send Another Message</button>
+        </div>
+        
+        
+        <footer class="footer">
+            <div class="footer-content">
+                
+                    <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Homepage.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutpage.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="project.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                        <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-section">
+                    <h4>Skills & Technologies</h4>
+                    <div class="skills-icons">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-node-js" title="Node.js"></i>
+                        <i class="fas fa-database" title="Database"></i>
+                        <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        <i class="fab fa-git-alt" title="Git"></i>
+                    </div>
+                
+                    <div class="footer-bottom">
+                    <p>&copy; 2025 Kenneth Iyke Amadi. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+                
+
+            
+        </footer>
+    </div>
+    
+    <script src="contact.js"></script>
+</body>
+</html>
