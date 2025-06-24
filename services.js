@@ -8,7 +8,6 @@ const servicesData = [
         duration: "4-8 weeks",
         description: "Full-stack web development with modern technologies including React, Node.js, and responsive design.",
         features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Cross-browser Compatible"],
-        // image: "https://via.placeholder.com/300x200/4f46e5/ffffff?text=Web+Dev"
         image: "./item8.jpg"
 
     },
@@ -20,7 +19,6 @@ const servicesData = [
         duration: "6-12 weeks",
         description: "Complete e-commerce platforms with payment integration, inventory management, and admin panels.",
         features: ["Payment Gateway", "Inventory Management", "Admin Dashboard", "Mobile Optimized"],
-        // image: "https://via.placeholder.com/300x200/059669/ffffff?text=E-commerce"
         image: "./item8.jpg"
     },
     {
@@ -31,7 +29,6 @@ const servicesData = [
         duration: "2-4 weeks",
         description: "User-centered design solutions including wireframes, prototypes, and visual design systems.",
         features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
-        // image: "https://via.placeholder.com/300x200/dc2626/ffffff?text=UI%2FUX"
         image: "./item8.jpg"
     },
     {
@@ -42,7 +39,6 @@ const servicesData = [
         duration: "1-3 weeks",
         description: "Complete brand identity packages including logo design, color schemes, and brand guidelines.",
         features: ["Logo Design", "Brand Guidelines", "Color Palette", "Typography"],
-        // image: "https://via.placeholder.com/300x200/7c3aed/ffffff?text=Branding"
         image: "./item8.jpg"
     },
     {
@@ -64,7 +60,6 @@ const servicesData = [
         duration: "Ongoing",
         description: "Search engine optimization services to improve your website's visibility and ranking.",
         features: ["Keyword Research", "On-page SEO", "Technical SEO", "Performance Tracking"],
-        // image: "https://via.placeholder.com/300x200/0891b2/ffffff?text=SEO"
         image: "./item8.jpg"
     },
     {
@@ -75,7 +70,6 @@ const servicesData = [
         duration: "Flexible",
         description: "Strategic business consulting to help optimize operations and drive growth.",
         features: ["Strategy Planning", "Process Optimization", "Market Analysis", "Growth Planning"],
-        // image: "https://via.placeholder.com/300x200/be185d/ffffff?text=Consulting"
         image: "./item8.jpg"
     },
     {
@@ -86,7 +80,6 @@ const servicesData = [
         duration: "Flexible",
         description: "Technical consulting for choosing the right technology stack for your projects.",
         features: ["Technology Assessment", "Architecture Planning", "Best Practices", "Implementation Guide"],
-        // image: "https://via.placeholder.com/300x200/0d9488/ffffff?text=Tech+Consulting"
         image: "./item8.jpg"
     },
     {
@@ -97,7 +90,6 @@ const servicesData = [
         duration: "8-16 weeks",
         description: "Native and cross-platform mobile application development for iOS and Android.",
         features: ["Cross-platform", "Native Performance", "App Store Deployment", "Push Notifications"],
-        // image: "https://via.placeholder.com/300x200/7c2d12/ffffff?text=Mobile+App"
         image: "./item8.jpg"
     },
     {
@@ -108,7 +100,6 @@ const servicesData = [
         duration: "1-2 weeks",
         description: "Professional graphic design for marketing materials, presentations, and digital assets.",
         features: ["Print Design", "Digital Graphics", "Presentations", "Marketing Materials"],
-        // image: "https://via.placeholder.com/300x200/1e40af/ffffff?text=Graphics"
         image: "./item8.jpg"
     },
     {
@@ -119,7 +110,6 @@ const servicesData = [
         duration: "Ongoing",
         description: "Complete social media management including content creation, posting, and engagement.",
         features: ["Content Creation", "Scheduled Posting", "Community Management", "Analytics Reports"],
-        // image: "https://via.placeholder.com/300x200/c2410c/ffffff?text=Social+Media"
         image: "./item8.jpg"
     },
     {
@@ -130,7 +120,6 @@ const servicesData = [
         duration: "3-6 weeks",
         description: "RESTful API development and integration services for web and mobile applications.",
         features: ["RESTful APIs", "Database Integration", "Authentication", "Documentation"],
-        // image: "https://via.placeholder.com/300x200/166534/ffffff?text=API+Dev"
         image: "./item8.jpg"
     },
     {
@@ -141,7 +130,6 @@ const servicesData = [
         duration: "4-8 weeks",
         description: "Complete website redesign with modern UI/UX principles and improved user experience.",
         features: ["Modern Design", "User Experience", "Performance Optimization", "Mobile First"],
-        // image: "https://via.placeholder.com/300x200/991b1b/ffffff?text=Redesign"
         image: "./item8.jpg"
     },
     {
@@ -152,7 +140,6 @@ const servicesData = [
         duration: "Ongoing",
         description: "Strategic content marketing including blog posts, articles, and content strategy.",
         features: ["Content Strategy", "Blog Writing", "SEO Content", "Content Calendar"],
-        // image: "https://via.placeholder.com/300x200/a16207/ffffff?text=Content"
         image: "./item8.jpg"
     },
     {
@@ -163,7 +150,6 @@ const servicesData = [
         duration: "8-16 weeks",
         description: "Complete digital transformation consulting to modernize business processes and technology.",
         features: ["Process Analysis", "Technology Integration", "Training", "Implementation Support"],
-        // image: "https://via.placeholder.com/300x200/6d28d9/ffffff?text=Digital+Transform"
         image: "./item8.jpg"
     },
     {
@@ -174,7 +160,6 @@ const servicesData = [
         duration: "2-5 weeks",
         description: "Professional database design and optimization for web applications and systems.",
         features: ["Schema Design", "Performance Optimization", "Data Migration", "Backup Solutions"],
-        // image: "https://via.placeholder.com/300x200/0c4a6e/ffffff?text=Database"
         image: "./item8.jpg"
     },
     {
@@ -185,7 +170,6 @@ const servicesData = [
         duration: "1-2 weeks",
         description: "Professional logo animation and motion graphics for branding and marketing materials.",
         features: ["2D Animation", "Motion Graphics", "Multiple Formats", "Brand Integration"],
-        // image: "https://via.placeholder.com/300x200/be123c/ffffff?text=Animation"
         image: "./item8.jpg"
     },
     {
@@ -196,7 +180,6 @@ const servicesData = [
         duration: "Ongoing",
         description: "Email marketing campaigns including design, automation, and performance tracking.",
         features: ["Campaign Design", "Automation", "A/B Testing", "Performance Analytics"],
-        // image: "https://via.placeholder.com/300x200/0369a1/ffffff?text=Email+Marketing"
         image: "./item8.jpg"
     },
     {
@@ -207,7 +190,6 @@ const servicesData = [
         duration: "Flexible",
         description: "Website and application performance consulting to optimize speed and user experience.",
         features: ["Performance Audit", "Optimization Strategy", "Implementation Guide", "Monitoring Setup"],
-        // image: "https://via.placeholder.com/300x200/059212/ffffff?text=Performance"
         image: "./item8.jpg"
     },
     {
@@ -218,7 +200,6 @@ const servicesData = [
         duration: "4-10 weeks",
         description: "Complete cloud migration services including planning, implementation, and optimization.",
         features: ["Migration Planning", "Cloud Setup", "Data Transfer", "Optimization"],
-        // image: "https://via.placeholder.com/300x200/7c2d12/ffffff?text=Cloud"
         image: "./item8.jpg"
     },
     {
@@ -229,7 +210,6 @@ const servicesData = [
         duration: "3-7 days",
         description: "Professional print design services for business cards, brochures, and marketing materials.",
         features: ["Business Cards", "Brochures", "Flyers", "Print Ready Files"],
-        // image: "https://via.placeholder.com/300x200/4338ca/ffffff?text=Print+Design"
         image: "./item8.jpg"
     },
     {
@@ -240,7 +220,6 @@ const servicesData = [
         duration: "Ongoing",
         description: "Pay-per-click advertising management for Google Ads, Facebook Ads, and other platforms.",
         features: ["Campaign Setup", "Keyword Research", "Ad Creation", "Performance Optimization"],
-        // image: "https://via.placeholder.com/300x200/dc2626/ffffff?text=PPC"
         image: "./item8.jpg"
     },
     {
@@ -251,7 +230,6 @@ const servicesData = [
         duration: "Flexible",
         description: "Cybersecurity consulting including security audits, vulnerability assessments, and recommendations.",
         features: ["Security Audit", "Vulnerability Assessment", "Security Planning", "Implementation Support"],
-        // image: "https://via.placeholder.com/300x200/b91c1c/ffffff?text=Security"
         image: "./item8.jpg"
     },
     {
@@ -262,7 +240,6 @@ const servicesData = [
         duration: "3-8 weeks",
         description: "Complete DevOps setup including CI/CD pipelines, deployment automation, and monitoring.",
         features: ["CI/CD Setup", "Deployment Automation", "Monitoring", "Infrastructure as Code"],
-        // image: "https://via.placeholder.com/300x200/0f766e/ffffff?text=DevOps"
         image: "./item8.jpg"
     }
 ];
